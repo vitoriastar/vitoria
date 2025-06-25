@@ -1,0 +1,108 @@
+styles.Css
+.container {/*esse contêiner é como se fosse uma caixa invisível que ficará toda a página do site, de modo que fique mais alinhado à página*/
+    max-width: 800px; /* Aqui estamos limitando a largura máxima do contêiner a 800px, para que ele não fique muito largo */
+    margin: 0 auto; /* Isso faz o contêiner ficar centralizado na tela */
+}
+body {
+    background-color: #f0f8ff ; /* Cor de fundo clara para o nosso site, algo como um azul bem suave */
+    font-family: Verdana, sans-serif; /* A fonte (tipo de letra) que vamos usar em todo o site é Arial */
+    text-align: left; /* Alinhamos todo o texto justificado */
+    text-indent: 1cm; /*Recua a primeira linha*/
+    padding: 20px;  /*Damos um espacinho nas bordas do site para que tudo fique bem organizado */
+}
+p {
+    font-size: 18px; /* Todos os parágrafos vão ter o tamanho de letra 18px */
+    line-height: 1.6; /* A altura das linhas vai ser 1.6 vezes o tamanho da letra, para ficar mais fácil de ler */
+    margin-bottom: 20px; /* Cada parágrafo vai ter um espacinho de 20px embaixo dele */
+}
+
+.titulo{
+    font-family: courier; /*lista priorizada de nomes de famílias de fontes*/
+    font-size: 150%; /*tamanho da fonte*/
+    color:#4b0082.
+    background-color: #dfb276; /* O fundo do parágrafo é cor-de-rosa clarinho */
+    border: 5px double rgb(72, 0, 255); /* Colocamos uma borda azul de 2px ao redor do parágrafo */
+    text-align: center; /*alinhamento centralizado*/
+    text-transform: uppercase; /*Coloca todas as letras em maiúscula*/
+    font-style: italic; /* estilo da fonte itálico*/
+    font-weight: 900; /* espessura da fonte (negrito)*/
+    }
+
+.destaque {
+        font-family: 'Courier New', Courier, monospace; /* Para o parágrafo especial, usamos uma fonte diferente que parece uma máquina de escrever */
+        font-size: 24px; /* A letra é um pouco maior, 20px */
+        color: #ff4500; /* A cor do texto é laranja avermelhada */
+        background-color: #ffe4e1; /* O fundo do parágrafo é cor-de-rosa clarinho */
+        border: 4px solid red; /* Colocamos uma borda vermelha de 5px ao redor do parágrafo */
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Esse efeito cria uma sombra azul clarinha na borda, parecendo que o parágrafo está flutuando */
+        margin: 30px 150px; /* O parágrafo tem mais espaço em cima e embaixo (30px), e dos lados (150px) */
+        padding: 10px; /* Adicionamos um espacinho dentro do parágrafo para que o texto não fique encostado na borda */
+    }
+
+ol {
+    text-align: left; /* A lista vai ficar alinhada à esquerda */
+    margin: 0 auto 30px 50px; /* Aqui centralizamos a lista e damos um espacinho embaixo dela o 50px é a margem esquerda*/
+    text-indent: 0cm; /*Recua a primeira linha para o texto não ficar longe do marcador*/
+    padding-left: 40px; /* A lista vai ter um espaço à esquerda para os números ficarem alinhados */
+}
+
+a {
+    color: #1e90ff; /* O link vai ser azul, bem vibrante */
+    text-decoration: none; /* Tiramos o sublinhado padrão dos links */
+    font-size: 18px; /* O tamanho da letra do link é 18px */
+}
+
+a:hover {
+    text-decoration: underline; /* Quando passamos o mouse por cima do link, o sublinhado aparece */
+}
+
+#textodolink{ /*Id*/
+    color: rgb(209, 27, 27)
+    text-align: center; /*alinhamento centralizado*/
+    margin-top: 1cm; /*margem superior*/
+    margin-bottom: 50px;  /*margem inferior*/
+}
+
+.image-container { /*esse contêiner é como se fosse uma caixa invisível onde ficará a primeira imagem e o texto que ficará na frente da imagem*/
+    position: relative; /* Fazemos a imagem ser posicionada relativamente dentro do contêiner */
+    margin: 40px 0; /* A imagem tem um espaço em cima e embaixo (40px) */
+    text-align: center; /* Centralizamos o texto */
+   
+}
+
+.image-container p {  /*formatação para todos os <p> que tiverem dentro do contêiner image-container*/
+    position: absolute; /* Colocamos o texto em posição absoluta dentro do contêiner */
+    top: 50%; /* Posicionamos o texto no meio verticalmente */
+    left: 50%; /* Posicionamos o texto no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos o texto para que ele fique exatamente no centro */
+    font-size: 30px; /* O tamanho da letra do texto no meio da imagem é 20px */
+    color: rgb(250, 242, 10); /* A cor do texto no meio da imagem é preta para contrastar com a imagem */
+    background-color: rgba(243, 10, 10, 0.996); /* Um fundo preto semi-transparente para o texto */
+    padding: 5px 10px; /* Adicionamos um espaçamento ao redor do texto */
+    border-radius: 10px; /* Arredondamos os cantos do fundo do texto */
+}
+
+.image-container img { /*formatação para todas as imagens que tiverem dentro do contêiner image-container*/
+    width: 200px; /* A largura da imagem vai ser 200px */
+    height: 200px; /* A altura também vai ser 200px, para que ela seja quadrada */
+    border-radius: 50%; /* Com esse comando, a imagem vira um círculo! */
+    transform: scaley(-1); /* Aqui, fazemos a imagem ser invertida horizontalmente */
+    display: block; /* Faz a imagem ser tratada como um bloco, ocupando toda a largura disponível */
+    margin: 0 auto; /* E isso faz com que a imagem fique centralizada no contêiner */
+    opacity: 0.3; /* Faz a imagem mudar de opacidade suavemente */
+}
+
+.image-overlay-container { /*esse contêiner é como se fosse uma caixa invisível onde ficará a segunda imagem*/
+    position: relative; /* A posição da imagem vai ser relativa ao contêiner onde ela está */
+    display: inline-block; /* Faz com que o contêiner se comporte como uma "caixinha" que se ajusta ao tamanho do conteúdo */
+    margin-bottom: 50px; /* Um espacinho de 50px embaixo da imagem para ficar bem organizado */
+}
+
+.image-overlay-container img { /*formatação para todas as imagens que tiverem dentro do contêiner image-overlay-container*/
+    width: 300px; /* A largura da imagem vai ser 300px */
+    height: auto; /* A altura vai se ajustar automaticamente para manter a proporção */
+    filter: grayscale(100%); /* Isso aqui desfoca a imagem, criando um efeito legal */
+    display: block; /* Faz a imagem ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza a imagem no contêiner, e não na página (body)*/
+}
+
